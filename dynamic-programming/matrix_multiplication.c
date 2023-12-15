@@ -66,9 +66,9 @@ int main() {
     int split[MAX_MATRICES][MAX_MATRICES]; // 保存最优划分点
 
     int minOperations = matrixChainOrder(dimensions, n, dp, split);
-    printf("最小计算次数为：%d\n", minOperations);
+    printf("min calculations: %d\n", minOperations);
 
-    printf("最优解为：");
+    printf("optimal: ");
     printOptimalParenthesis(split, 1, n);
     printf("\n");
 
