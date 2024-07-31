@@ -164,7 +164,6 @@ def GA(epoch: int):
     # 初始群体
     population = init()
     fitnesses: list[Fitness] = []
-    # tag = -1
 
     for generation in range(epoch):
         print(f"epoch {generation}")
@@ -180,10 +179,6 @@ def GA(epoch: int):
         
         population = new_population
         fitnesses = cal_fitness(population)
-        # tag = is_finished(fitnesses)
-
-        # if tag != -1:
-        #     break
 
     return population, fitnesses
 
